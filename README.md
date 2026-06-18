@@ -2,7 +2,41 @@
 
 从 `Chapter 1` 开始，这门课就不再只是阅读材料，而是要求你真的动手写代码。后面的每一章都会配一个对应 lab。chapter 负责把这章为什么存在、这个概念到底解决什么问题讲清楚，lab 负责把这一章真正该补的代码边界交给你。
 
-你可以把这里理解成“实践入口”，但不要把它当成题单。最推荐的节奏始终是：
+你可以把这里理解成“实践入口”，但不要把它当成题单。
+
+## 这个目录从哪里来
+
+在课程主仓库里，`course/practice/` 是一个 Git submodule，实际指向独立仓库：
+
+```text
+git@github.com:Luyoung0001/miniCompiler_lab.git
+```
+
+推荐你通过课程仓库一起拉取它：
+
+```bash
+git clone --recurse-submodules git@github.com:Luyoung0001/minicompiler.git
+```
+
+如果你已经 clone 过课程仓库，但进入 `course/practice/` 时发现目录为空，回到课程仓库根目录执行：
+
+```bash
+git submodule update --init --recursive
+```
+
+你也可以单独 clone lab 仓库做练习：
+
+```bash
+git clone git@github.com:Luyoung0001/miniCompiler_lab.git
+cd miniCompiler_lab
+bash scripts/bootstrap-practice.sh
+```
+
+两种方式看到的是同一套实验骨架。课程网页会继续用 `course/practice/...` 这个路径描述实践位置，是因为在主仓库里 submodule 就挂在这里。
+
+## 你应该怎样使用这里
+
+最推荐的节奏始终是：
 
 1. 先读对应 chapter
 2. 再进入对应 lab，读 `TASK.md`
