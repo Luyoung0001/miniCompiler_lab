@@ -6,7 +6,7 @@ hours: 5h
 deliverable: 把最小表达式和变量访问变成 RISC-V 汇编
 ---
 
-> **实验编号** Lab05 &nbsp;&nbsp; **预计耗时** 5h &nbsp;&nbsp; **对应参考实现** [`step_5/`](../../../step_5/) &nbsp;&nbsp; **本节产出** 生成可运行的最小 RISC-V 汇编片段
+> **实验编号** Lab05 &nbsp;&nbsp; **预计耗时** 5h &nbsp;&nbsp; **本节产出** 生成可运行的最小 RISC-V 汇编片段
 
 ## 本章任务
 

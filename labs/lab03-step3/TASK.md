@@ -6,7 +6,7 @@ hours: 4h
 deliverable: 补完递归下降解析器中的关键结构节点
 ---
 
-> **实验编号** Lab03 &nbsp;&nbsp; **预计耗时** 4h &nbsp;&nbsp; **对应参考实现** [`step_3/`](../../../step_3/) &nbsp;&nbsp; **本节产出** 让 token 流生长成一棵结构正确的 AST
+> **实验编号** Lab03 &nbsp;&nbsp; **预计耗时** 4h &nbsp;&nbsp; **本节产出** 让 token 流生长成一棵结构正确的 AST
 
 ## 本章任务
 

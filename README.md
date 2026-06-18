@@ -4,27 +4,9 @@
 
 你可以把这里理解成“实践入口”，但不要把它当成题单。
 
-## 这个目录从哪里来
+## 先把 lab 仓库拉到本地
 
-在课程主仓库里，`course/practice/` 是一个 Git submodule，实际指向独立仓库：
-
-```text
-https://github.com/Luyoung0001/miniCompiler_lab.git
-```
-
-推荐你通过课程仓库一起拉取它：
-
-```bash
-git clone --recurse-submodules https://github.com/Luyoung0001/minicompiler.git
-```
-
-如果你已经 clone 过课程仓库，但进入 `course/practice/` 时发现目录为空，回到课程仓库根目录执行：
-
-```bash
-git submodule update --init --recursive
-```
-
-你也可以单独 clone lab 仓库做练习：
+读课程网页时，你只需要拉取这个 lab 仓库：
 
 ```bash
 git clone https://github.com/Luyoung0001/miniCompiler_lab.git
@@ -32,7 +14,13 @@ cd miniCompiler_lab
 bash scripts/bootstrap-practice.sh
 ```
 
-两种方式看到的是同一套实验骨架。课程网页会继续用 `course/practice/...` 这个路径描述实践位置，是因为在主仓库里 submodule 就挂在这里。
+后面所有需要你修改的代码，都在这个仓库里。课程网页会用 `labs/...` 描述实验位置；这些路径都以 `miniCompiler_lab` 仓库根目录为起点。
+
+lab 仓库地址是：
+
+```text
+https://github.com/Luyoung0001/miniCompiler_lab.git
+```
 
 ## 你应该怎样使用这里
 
@@ -45,15 +33,14 @@ bash scripts/bootstrap-practice.sh
 
 这个顺序很重要。因为这门课不是让你只对着测试输出来猜实现，而是希望你先知道“为什么现在轮到这件事”，再去写代码。
 
-## 这套 practice 和参考实现是什么关系
+## 这套 practice 怎样组织
 
-根目录的 `step_1/` 到 `step_5/` 是参考实现，它们展示了编译器每个阶段的完成状态。  
-`course/practice/labs/` 不是那套实现的副本，而是把每一章真正关键的子问题单独抽出来，做成边界清晰的 scaffold。
+`labs/` 把每一章真正关键的子问题单独抽出来，做成边界清晰的 scaffold。你不需要在一个庞大的完整工程里到处找入口，只需要跟着当前 chapter，进入对应 lab，完成 `framework/student.c` 里的 TODO。
 
 也就是说：
 
-- 你不会直接在 `step_2/lexer.c` 里练习
-- 你会在 `course/practice/labs/lab02-step2/framework/student.c` 里完成和它同主题的核心逻辑
+- 你会在 `labs/lab02-step2/framework/student.c` 里完成词法分析这一章的核心逻辑
+- 你每完成一章，就用该 lab 的 `make clean && make test` 验证一次
 
 这样做的好处是，lab 的代码范围会小很多，你能更快把注意力放在这一章真正想教的点上。
 

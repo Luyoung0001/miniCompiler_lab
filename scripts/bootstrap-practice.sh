@@ -47,10 +47,10 @@ cat <<'EOF'
 预期说明：
 - Chapter 0 的默认基线不是全 PASS
 - Lab01 初始状态通常会出现若干 FAIL
-- 这说明你已经进入学员实践骨架，而不是完整参考实现
+- 这说明你已经进入学员实践骨架
 
 下一步：
-1. 返回 course/00-orientation.md 收尾
-2. 阅读 course/chapters/ch01-step1-driver.md
+1. 回到课程网页，继续读 Chapter 0 收尾
+2. 阅读 Chapter 1：编译器最小驱动与文件 I/O
 3. 打开 labs/lab01-step1/TASK.md 和 framework/student.c
 EOF

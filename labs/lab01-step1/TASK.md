@@ -6,7 +6,7 @@ hours: 2h
 deliverable: 完成参数解析、文件读取和固定汇编输出骨架
 ---
 
-> **实验编号** Lab01 &nbsp;&nbsp; **预计耗时** 2h &nbsp;&nbsp; **对应参考实现** [`step_1/`](../../../step_1/) &nbsp;&nbsp; **本节产出** 跑通一个最小但真实的 `input.c -> out.s` 编译器驱动
+> **实验编号** Lab01 &nbsp;&nbsp; **预计耗时** 2h &nbsp;&nbsp; **本节产出** 跑通一个最小但真实的 `input.c -> out.s` 编译器驱动
 
 ## 实验目的
 
