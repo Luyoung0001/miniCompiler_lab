@@ -9,13 +9,13 @@
 在课程主仓库里，`course/practice/` 是一个 Git submodule，实际指向独立仓库：
 
 ```text
-git@github.com:Luyoung0001/miniCompiler_lab.git
+https://github.com/Luyoung0001/miniCompiler_lab.git
 ```
 
 推荐你通过课程仓库一起拉取它：
 
 ```bash
-git clone --recurse-submodules git@github.com:Luyoung0001/minicompiler.git
+git clone --recurse-submodules https://github.com/Luyoung0001/minicompiler.git
 ```
 
 如果你已经 clone 过课程仓库，但进入 `course/practice/` 时发现目录为空，回到课程仓库根目录执行：
@@ -27,7 +27,7 @@ git submodule update --init --recursive
 你也可以单独 clone lab 仓库做练习：
 
 ```bash
-git clone git@github.com:Luyoung0001/miniCompiler_lab.git
+git clone https://github.com/Luyoung0001/miniCompiler_lab.git
 cd miniCompiler_lab
 bash scripts/bootstrap-practice.sh
 ```
